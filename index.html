@@ -1,26 +1,23 @@
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body {
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
-      .ajuste {
-        margin-top: -18px;
-        margin-left: -15px;
-      }
-    </style>
-  </head>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .ajuste {
+      margin-top: -18px;
+      margin-left: -15px;
+    }
+  </style>
 
   <body>
-    <iframe id="dashboard" class="ajuste" width="103%" height="107%" src="https://app.powerbi.com/view?r=SEU-LINK-ADM-AQUI" frameborder="0" allowfullscreen="true"></iframe>
+    <iframe id="dashboard" class="ajuste" width="103%" height="107%" src="SEU_LINK_DO_POWER_BI" frameborder="0" allowfullscreen="true"></iframe>
 
     <script>
       setInterval(function() {
         document.getElementById('dashboard').src += '';
-      }, 300000); // Atualiza a cada 5 minutos
+      }, 300000); // Atualiza o iframe a cada 5 minutos
     </script>
   </body>
 </html>
